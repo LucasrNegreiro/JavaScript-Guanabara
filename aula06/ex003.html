@@ -18,11 +18,15 @@
     <h1>Olá mundo!</h1>
     <p>Já me livrei da maldição!</p>
     <script>
-        // gera uma mensagem de pergunta para o usuario
-      let nome =  prompt('Me diga seu Nome: ')
-      alert('É um grande prazer te conhecer ' + nome + '!')//concatenação
+        // parseInt ou parseFloat que tras pontos e virgulas, força a variavel a entender que o valor a ser digitado ser um number e nao uma string 
 
-        
+        //tambem posso simplificar usando o Number
+       let n1 = Number(prompt('Digite um Numero: '))
+       let n2 = parseInt(prompt('Digite outro Numero: '))
+       let soma = n1 + n2
+
+    //    Á crase(``) e usada para simplificar a concatenação e chamar a variavel dentro da string como o exemplo abaixo
+        alert(`a soma entre ${n1} e ${n2} é ${soma} `)
     </script>
 </body>
 
