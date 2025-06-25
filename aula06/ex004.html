@@ -4,8 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            font: normal 20px poppins;
+        }
+    </style>
 </head>
 <body>
     
+    <script>
+        let nome = prompt('Qual é seu nome?') 
+
+        // o comando document.write ele escreve na pagina
+        document.write(`Seu nome tem ${nome.length} Letras. <br>`) 
+        // toUpperCase transforma meu texto em maiusculo
+        document.write(`Seu nome em maiusculo É ${nome.toUpperCase()} <br>`)
+        // toLowerCase transforma o texto em minusculo
+        document.write(`Seu nome em minusculo É ${nome.toLowerCase()}`)
+    </script>
 </body>
-</html>
+</html> 
