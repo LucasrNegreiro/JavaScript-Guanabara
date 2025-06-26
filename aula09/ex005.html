@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(91, 91, 197);
+            color: white;
+            font: normal 18px arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div  class="msg">Clique em mim</div>
+    <script>
+        // getElementsByTagName serve para buscar o elemento pela tag name dele que no caso abaixo é P o [] serve para selecionar qual paragrafo eu quero caso tenha mais de 1 no meu html
+        let p1 = document.getElementsByTagName('p')[1]
+        document.write(`Esta escrito assim:  ${p1.innerText}`)
+
+        // o style.color consigo mudar a cor do meu paragro usando JS
+        p1.style.color = 'black'
+
+        // getElementById pega o elemento pelo ID dele
+        //  let d = document.getElementById('msg')
+        //  d.style.background = 'green'
+
+        // pega o elemento pelo nome declarado a ele
+        //  let d = document.getElementsByName('msg')[0]
+        //  d.style.color = 'black'
+
+        let d = document.querySelector('div.msg')
+        d.style.color = 'black'
+
+    </script>
+</body>
+</html>
