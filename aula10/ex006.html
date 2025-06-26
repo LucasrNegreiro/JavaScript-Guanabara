@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos DOM</title>
+</head>
+<style>
+    #area {
+        font: normal 20px arial;
+        background-color: rgba(0, 128, 0, 0.664);
+        color: white;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+    }
+</style>
+
+<body>
+    <!-- eventos que posso usar no java script
+     onclick="clicar()" onmouseenter="entrou()" onmouseout="sair()" ETC...
+    -->
+    <div id="area">
+        interaja..
+    </div>
+    <script>
+        let d = document.getElementById('area')
+        // simplificando os eventos invez de usar diretamente no html posso usar no JS
+        d.addEventListener('click', clicar)
+        d.addEventListener('mouseenter', entrou)
+        d.addEventListener('mouseout', sair)
+
+        function clicar() {
+            d.innerText = 'clicou'
+            d.style.background = 'red'
+
+        }
+        function entrou() {
+            d.innerText = 'entrou'
+        }
+        function sair() {
+            d.innerText = 'saiu'
+            d.style.background = 'green'
+
+        }
+    </script>
+</body>
+
+</html>

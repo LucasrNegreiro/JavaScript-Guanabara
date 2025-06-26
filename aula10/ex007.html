@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando numeros</title>
+</head>
+<body>
+    <h1>somando valores</h1>
+    <input type="number" name="txtn1" id="txtn1">+
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" id="soma">
+    <div id="res">Resultado</div>
+    <script>
+        
+        let botao = document.getElementById('soma')
+        let ress = document.getElementById('res')
+        
+        
+        
+        
+        botao.addEventListener('click', soma)
+
+        function soma(){
+            let n1 = Number(document.getElementById('txtn1').value)
+            let n2 = Number(document.getElementById('txtn2').value)
+            let s = n1+n2
+            ress.innerHTML=`O resultado é: ${s}`
+        }
+    </script>
+</body>
+</html>
