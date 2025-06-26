@@ -13,14 +13,16 @@
     <div id="res">Resultado</div>
     <script>
         
+        // variaveis onde pega os id do botão e da div onde trás a informação do resultado
         let botao = document.getElementById('soma')
         let ress = document.getElementById('res')
         
         
         
-        
+        // criei um evento onde quando clico no input la no html ele me tras o que esta dentro da function
         botao.addEventListener('click', soma)
 
+        // função criada para somar os numeros ao clicar no botão
         function soma(){
             let n1 = Number(document.getElementById('txtn1').value)
             let n2 = Number(document.getElementById('txtn2').value)
