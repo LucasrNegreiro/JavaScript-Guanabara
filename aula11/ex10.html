@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.377);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sistema de multas</h1>
+    <input type="number" name="txtvel" id="VEL" placeholder="Digite a velocidade">
+    <button id="calcular">Verificar</button>
+    <div id="RES"></div>
+
+    <script>
+
+
+
+        // aqui as variaveis resultado e botao recebe o id do button em html e da div
+        let resultado = document.querySelector('div#RES')
+        let botao = document.getElementById('calcular')
+
+        // crio um evento de click no botao ja simplificando a função dele
+        botao.addEventListener('click', function (clicar) {
+
+            // criei a variavel do input dentro do eventlist para poder funcionar se for criado fora não funciona
+            let vel = Number(document.getElementById('VEL').value)
+
+            // adiciono if e else para resultdos diferentes na hora que o usuario declarar a velocidade no input
+            if (vel > 100) {
+                resultado.innerHTML = `Sua velocidade é ${vel} <strong>Multado!</strong>`
+            } else
+                resultado.innerHTML = `Sua velocidade é ${vel} km/h muito Bem `
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>
