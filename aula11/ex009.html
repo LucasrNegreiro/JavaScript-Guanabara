@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: beige;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sistema de Indenficação de Origem</h1>
+    <input type="text" name="txt1" id="txt" placeholder="Digite seu Pais">
+    <button id="botao">Verificar</button>
+    <div class="res">
+    </div>
+
+    <script>
+        // entendendo meu codigo!!!
+
+        // area das variaveis que recebe o botao e a div resultado
+        let botao = document.getElementById('botao')
+        let resultado = document.querySelector('div.res')
+
+
+        // evento do que o botão vai fazer(ao ser clicado vai gerar uma mensagem)
+        botao.addEventListener('click', function (clicar) {
+
+            // variavel texto recebe tudo que for digitado no meu input
+            let texto = document.getElementById('txt').value
+
+            // se for digitado outro pais sem ser Brasil vai trazer está mensagem
+            if (texto != 'Brasil') {
+                resultado.innerHTML = `Seu pais è ${texto} portanto você è estrangeiro`
+
+                // se o resultado digitado for Brasil me trará essa mensagem
+            } else
+                resultado.innerHTML = `Seu pais é ${texto} FAZ O L!!!`
+
+        })
+    </script>
+
+</body>
+
+</html>
