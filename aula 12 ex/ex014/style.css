@@ -25,17 +25,7 @@ body {
     width: 400px;
     height: 400px;
     margin: auto;
-    
-}
 
-h1 {
-    text-align: center;
-    font-size: 2.2em;
-}
-
-.conteudo {
-    display: flex;
-    flex-direction: column;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 8px black;
@@ -44,7 +34,29 @@ h1 {
     height: 400px;
     color: black;
     text-align: center;
+    
 }
+#conteudo{
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+#MENSAGEM{
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.foto img{
+    border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2.2em;
+}
+
 
 .rodapé {
     text-align: center;
@@ -52,3 +64,4 @@ h1 {
     text-transform: uppercase;
     font-weight: 600;
 }
+
