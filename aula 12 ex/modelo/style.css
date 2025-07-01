@@ -22,10 +22,19 @@ body {
 /* conteudo */
 .container {
     color: white;
-    width: 400px;
-    height: 400px;
+    width: 600px;
     margin: auto;
+
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 8px black;
+    padding: 50px;
+    color: black;
     
+    
+}
+.conteudo{
+    padding: 10px;
 }
 
 h1 {
@@ -33,18 +42,7 @@ h1 {
     font-size: 2.2em;
 }
 
-.conteudo {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 8px black;
-    padding: 50px;
-    width: 400px;
-    height: 400px;
-    color: black;
-    text-align: center;
-}
+
 
 .rodapé {
     text-align: center;
