@@ -21,6 +21,7 @@ body {
 
 /* conteudo */
 .container {
+    
     color: white;
     width: 600px;
     margin: auto;
@@ -34,7 +35,8 @@ body {
     
 }
 .conteudo{
-    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 h1 {
@@ -42,6 +44,12 @@ h1 {
     font-size: 2.2em;
 }
 
+
+#foto{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
 
 
 .rodapé {
