@@ -56,7 +56,7 @@ function clicar(){
         }
         result.style.textAlign = 'center'
 
-        result.innerHTML = `Detectamos ${genero} com ${idade} anos. <br> `
+        result.innerHTML = `Detectamos ${genero} com ${idade} anos.`
 
         result.appendChild(img)
     }
