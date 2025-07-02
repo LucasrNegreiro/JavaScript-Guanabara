@@ -9,7 +9,7 @@ body{
     background-color: rgba(0, 0, 255, 0.404);
     height: 100vh;
 }
-h1{
+h1, footer{
     text-align: center;
     margin: 10px;
 }
@@ -22,7 +22,7 @@ h1{
     box-shadow: 0 0 8px black;
     padding: 20px;
 }
-.container div p, .but,.res{
+.container div p, .but{
     margin: 10px;
 }
 

@@ -1,6 +1,6 @@
 
 
- let botao = document.querySelector('button.but')
+ let botao = document.querySelector('input#but')
      botao.addEventListener('click', clicar)
 
 function clicar(){
@@ -54,11 +54,9 @@ function clicar(){
             }
             
         }
-        
-        
+        result.style.textAlign = 'center'
 
-        
-        result.innerHTML = `Detectamos ${genero} com ${idade} anos.`
+        result.innerHTML = `Detectamos ${genero} com ${idade} anos. <br> `
 
         result.appendChild(img)
     }
