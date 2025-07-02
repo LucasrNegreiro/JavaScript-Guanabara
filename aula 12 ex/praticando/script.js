@@ -2,9 +2,11 @@
 
  let botao = document.querySelector('input#but')
      botao.addEventListener('click', clicar)
+     
+ 
 
 function clicar(){
-    
+     
     let data = new Date()
     let ano = data.getFullYear()
 
