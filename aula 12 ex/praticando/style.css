@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgba(0, 0, 255, 0.404);
+    height: 100vh;
+}
+h1{
+    text-align: center;
+    margin: 10px;
+}
+
+.container{
+    width: 600px;
+    background-color: white;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 8px black;
+    padding: 20px;
+}
+.container div p, .but,.res{
+    margin: 10px;
+}
+
+#foto{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+#but{
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 2px black;
+    font-weight: 600;
+}
+
+#but:hover{
+    cursor: pointer;
+    background-color: rgb(165, 194, 184);
+    transform: scale(1.05);
+}
+
+.conteudo{
+    width: 100%;
+}
