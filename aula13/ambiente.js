@@ -10,17 +10,15 @@ while(c <=8){
 
 // mesma função que a de cima porem ele executa a linha de codigo primeiro para depois verificar se e verdadeiro
 // coma pizza para depois ver se tem o pedaço
-// let c = 1
-// do{
+let c = 1
+do{
     
-//     console.log(`comi a fatia ${c}`)
-//     c++
-// }while(c <= 8)
+    console.log(`comi a fatia ${c}`)
+    c++
+}while(c <= 8)
 
 
-    for(c=1; c<=8; c++){
-        console.log(`comi a fatia ${c}`)
-    }
+    
 
 
 
