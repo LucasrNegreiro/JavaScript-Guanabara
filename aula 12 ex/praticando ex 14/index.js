@@ -28,11 +28,12 @@ function carregar(){
 }
 
 function entrar(){
-    let cor = document.getElementById('container')
+    let cor = document.getElementsByClassName('container')[0]
     cor.style.backgroundColor = 'red'
-    if(function saiu(){
-        cor.style.backgroundColor = 'green'
-    }){
-        
-    }
+    
+}
+
+function sair(){
+    let cor = document.getElementsByClassName('container')[0]
+    cor.style.backgroundColor = 'green'
 }
