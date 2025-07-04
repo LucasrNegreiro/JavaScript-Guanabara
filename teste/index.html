@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section class="container">
+        <div class="conteudo">
+            <p>Inicio: 
+                <input type="number" name="inicio" id="Inicio" min="0">
+            </p>
+            <p>Meio:
+                <input type="number" name="meio" id="meio">
+                
+            </p>
+            <p>Passo:
+                <input type="number" name="passo" id="passo">
+
+            </p>
+
+
+            <button class="but" onclick="clicar()">Contar</button>
+        </div>
+        <div id="res">
+            Preparando a contagem...
+        </div>
+    </section>
+    <footer class="rodapé">
+        <p>&copy;CursoemVideo</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
