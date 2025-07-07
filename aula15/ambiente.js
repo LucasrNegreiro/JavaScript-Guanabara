@@ -13,3 +13,5 @@ for( i =0; i <= num.length; i++){
 for(i in num){
     console.log(num[i])
 }
+
+
