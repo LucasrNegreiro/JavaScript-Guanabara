@@ -23,6 +23,7 @@ function adicionar(){
         let item = document.createElement('option')
         item.text = `o valor ${num.value} foi adicionado`
         lista.appendChild(item)
+        res.innerHTML=''
     }else{
         alert('Numero invalido ou ja encontrado na lista')
     }
