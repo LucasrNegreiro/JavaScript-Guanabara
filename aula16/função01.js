@@ -9,6 +9,6 @@ function parimp(n){
 }
 // parimp(10) a variavel res vai ter o resultado da chamada da função o (10) e o parametro
 // entao o parametro la em cima que éra n passa a valer 10
-let res = parimp(10)
+let res = parimp(456)
 
 console.log(res)
