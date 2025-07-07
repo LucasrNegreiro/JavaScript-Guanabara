@@ -63,8 +63,8 @@ function finalizar(){
             if (valores[pos] > maior){
                 maior = valores[pos]
                 // me tras o menor valor da lista
-            }else if (valores[pos < menor]){
-                menor = vlaores[pos]
+            }else if (valores[pos] < menor){
+                menor = valores[pos]
             }
         }
         // a media e a divisao da soma com o total dos meus elementos
